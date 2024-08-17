@@ -33,3 +33,20 @@ git worktree remove ../feature-branch
 ## Conclusion
 
 Les Git worktrees facilitent la gestion de plusieurs branches en parallèle et optimisent le processus de développement en permettant de travailler efficacement sur plusieurs aspects du code.
+
+
+
+## Autres exemples
+
+#Créer un Nouveau Worktree
+git worktree add ../feature-branch feature-branch
+
+#Travailler dans un worktree
+cd ../feature-branch
+echo "Nouveau fichier" > file.txt
+git add file.txt
+git commit -m "Ajout d'un nouveau fichier dans feature-branch"
+
+
+#Supprimer un worktree
+git worktree remove ../feature-branch
